@@ -18,7 +18,7 @@ section{
     height: 100%;
 }
 .icon-loading{
-    color: white !important;
+    color: yellow !important;
 }
 .icon-load{
     color: red !important;
