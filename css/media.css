@@ -1,0 +1,63 @@
+@media screen and (max-width:767px){
+    .side-bar{
+        width: 47%;
+    }
+   .detail-info h3 {
+    text-align: center;
+   }
+   #detailDesc{
+    text-align: justify;
+   }
+   .recipes{
+    justify-content: center;
+   }
+    .copy{
+        font-size: 13px;
+    }
+    .details,.home,.category,.categorydetails,.area,.ingredients,.ingredientsdetails,.contact{
+        margin-left: 50px;
+    }
+    .search{
+    margin-left: 70px;
+    }
+    .search input {
+        margin-bottom: 30px;
+        width: 90%;
+    }
+    .nav-open,.nav-slide{
+        min-height: 100vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    .side-icon,.side-footer{
+        margin: 10px !important;
+    }
+    .details,.home{
+        margin-left: 30px;
+    }
+    #displaySearch,.category,.area,.ingredients,.ingredientsdetails{
+        margin-left: 10px;
+    }
+    .contact{
+        margin-left:20px
+    }
+}

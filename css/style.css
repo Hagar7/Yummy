@@ -1,0 +1,362 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section{
+    display: none;
+}
+#loading{
+    position: fixed;
+    inset:0;
+    background-color: #333;
+    z-index: 999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.icon-loading{
+    color: white !important;
+}
+.icon-load{
+    color: red !important;
+}
+/*sidebar*/
+.nav-slide{
+    width:250px ;
+    position: fixed;
+    top: 0;
+    min-height: 100vh;
+    left:-250px;
+    z-index: 999999;
+    background-color: black;
+    color: white;
+}
+.nav-open{
+background-color: #fff !important;
+width: 50px;
+position: fixed;
+top: 0;
+left: 0px;
+z-index: 9999;
+min-height: 100vh; 
+}
+.nav-item{
+  height: 100%;
+  padding: 30px 0;
+}
+
+.ul-list{
+    margin-top: 200px;
+}
+.li-nav li{
+    list-style: none;
+    margin-bottom: 20px !important  ;
+    color: white !important;
+    cursor: pointer;
+
+}
+.li-nav li a{
+   
+    color: white !important;
+
+}
+.icon-social {
+    text-align: center;
+}
+.icon-social i{
+    color: #f9f6f6 !important;
+}
+.nav-open{
+    background-color: aliceblue;
+}
+.end-nav{
+    position: absolute;
+    bottom: 20px;
+    left:10px   
+}
+.end-nav p{
+    font-size: 14px;
+    
+}
+.buttom{
+    position: absolute;
+    left: 32%;
+    top: 50%;
+    cursor: pointer;
+}
+.icon-nav-open{
+    position: absolute;
+    bottom: 25px;
+    left: 32%;
+
+}
+/*home*/
+body{
+    background-color: black;
+}
+.home{
+   
+    min-height: 100vh;
+    margin: auto;
+    padding: 100px 0 50px;
+}
+.item {
+    margin:10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.overlay{
+    position: absolute;
+    transition: 1s all;
+    -webkit-transition: 1s all;
+    -moz-transition: 1s all;
+    -ms-transition: 1s all;
+    -o-transition: 1s all;
+    inset: 0;
+    opacity:0;
+    background: rgba(255, 255, 255, 0.7);
+    transform:translateY(200px);
+    -webkit-transform:translateY(200px);
+    -moz-transform:translateY(200px);
+    -ms-transform:translateY(200px);
+    -o-transform:translateY(200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item:hover .overlay{
+     transform: translateY(0px);
+     -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px); 
+    opacity: 1;
+    
+}
+.item .myImg{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.myhead{
+  font-size: 25px; 
+}
+
+/*search*/
+.search {
+    margin:auto;
+    min-height: 100vh;
+    padding: 50px 0 50px;
+   
+}
+.search input{
+background-color: transparent;
+border: 1px solid transparent;
+border-bottom: 1px solid #fff;
+}
+.search input::placeholder{
+    text-align: center;
+}
+.search input:focus{
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #fff;
+    color:#fff
+}
+
+/*category*/
+.category{
+    margin:auto;
+    min-height: 100vh;
+    padding: 100px 0 50px;
+}
+.overlay1{
+    position: absolute;
+    transition: 1s all;
+    -webkit-transition: 1s all;
+    -moz-transition: 1s all;
+    -ms-transition: 1s all;
+    -o-transition: 1s all;
+    inset: 0;
+    opacity:0;
+    background: rgba(255, 255, 255, 0.7);
+    transform:translateY(200px);
+    -webkit-transform:translateY(200px);
+    -moz-transform:translateY(200px);
+    -ms-transform:translateY(200px);
+    -o-transform:translateY(200px);
+
+}
+.item:hover .overlay1{
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   -o-transform: translateY(0px); 
+   opacity: 1;
+   
+}
+.para{
+    width: 95%;
+    margin: auto;
+}
+/*details*/
+.details{
+    margin:auto;
+    min-height: 100vh;
+    padding: 100px 0 50px ; 
+}
+.detail-img{
+    margin:10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.detail-info {
+    margin: 10px 0;
+    color: #fff;
+    padding-top: 30px;
+}
+.detail-info h3{
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.new{
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 34px;
+    font-weight: 400;
+}
+#detailDesc{
+    margin-bottom: 20px;
+}
+.detail-info h6{
+    margin-bottom: 15px;
+}
+.detail-info h6 span{
+    font-weight: 300;
+}
+.recipes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+.tags{
+margin-top: 20px;
+}
+.helwa{
+    background-color: red;
+    color: #fff;
+    padding: 5px;  
+}
+.tags button a{
+    background-color: red;
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+}
+/*area*/
+.area{
+    margin:auto;
+    min-height: 100vh;
+    padding: 100px 0 50px ;
+    text-align: center;  
+    display: none; 
+}
+.item i{
+    color:#e65a50ab;
+    margin-bottom: 10px;
+}
+.item h3{
+    color:#fff;
+
+}
+
+/*area details*/
+.areadetails{
+    margin:auto;
+    min-height: 100vh;
+    padding: 100px 0 50px ;
+     
+}
+/*Ingredients*/
+.ingredients{
+    margin:auto;
+    min-height: 100vh;
+    padding: 100px 0 50px ;
+    text-align: center;  
+    overflow: hidden;
+}
+.ingredients .item {
+    height: 150px;
+    margin-bottom: 35px;
+}
+.ingredients i{
+    color: #9ee650ab;
+    margin-bottom: 15px;
+}
+.ingredients h3{
+    color: #fff;
+    font-size: 18px;
+}
+.ingredients p{
+    color: #fff;
+    font-size: 13px;
+}
+
+/*ingredientsdetails*/
+
+.ingredientsdetails{
+    margin:auto;
+    min-height: 100vh;
+    padding: 100px 0 50px ; 
+}
+
+/*contact*/
+.contact{
+    margin:auto;
+    min-height: 100vh;
+    padding: 100px 0 50px ;
+    text-align: center; 
+}
+
+.contact input{
+    margin: 20px 0;
+    background-color: transparent;
+    overflow: visible;
+}
+.form-control {
+    color: #fff;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 3px 3px grey;
+}
+.contact input:focus{
+    background-color: black; 
+    box-shadow: 0px 0px 3px 3px grey;
+    color: #eee;
+    border: 1px solid transparent;
+}
+
+.contact input::placeholder{
+    color: #eee;
+}

@@ -1,0 +1,219 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+  />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+
+    <!--loading-->
+     
+    <section id="loading">
+        <i class="icon-loading fas fa-spinner fa-2x fa-spin text-danger "></i>
+    </section>
+
+    <!--sidebar-->
+    <div class="nav-slide">
+        <div class="nav-item  ">
+            <div id="navlist" class="ul-list ">
+                <ul class="li-nav">
+                    <li id="searchInput">Search</li>
+                <li id="cat">Categories</li>
+                <li id="ara">Area</li>
+                <li id="ingredients">Ingredients</li>
+                <li id="contact">Contact</li>      
+                </ul>
+            </div>
+            <div class="end-nav">
+                <div class="icon-social px-3">
+                    <a href=""><i class="fab fa-facebook-f pe-2"></i></a>
+                    <a href=""><i class="fab fa-twitter pe-2 "></i></a>
+                    <a href=""><i class="fas fa-globe pe-2   "></i></a>
+                     </div>
+                  <div class="pt-3">
+                     <span>Copyright Â© 2019 All Rights Reserved.
+                     </span>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-open"> 
+        <div class="logo mt-2 "> <img class="w-100" src="images/logo.png" alt="">
+        </div>
+        <div class="buttom">
+            <i class=" fa fa-align-justify" id="togly"></i>
+        </div>
+        <div class="icon-nav-open">
+            <div class="strip-lang mb-2"><span><i class=" fas fa-globe"></i></span></div>
+            <div class="strip-lang"> <span><i class="fas fa-share-alt"></i></span></div>
+        </div>
+    </div>
+    
+    <!--home-->
+    <section class="home d-none">
+        <div class="container">
+            <div class="row" id="displayData">
+            </div>
+        </div>
+    </section>
+    <!--search-->
+    <section class="search d-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="Search By Name" class="form-control" id="searchByName">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="Search By Name" class="form-control" id="searchByLetter">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5" id="displaySearch">
+            </div>
+
+        </div>
+    </section>
+
+    <!--category-->
+    <section class="category  d-none">
+        <div class="container">
+            <div class="row text-center" id="displayCategory">
+            </div>
+        </div>
+    </section>
+
+    <!--show data details-->
+    <section class="details d-none">
+        <div class="container">
+            <div class="row" id="mealDetail"> 
+                <div class="col-md-4">
+                    <div class="detail-img">
+                        <img  alt="" class="w-100 myImg" id="detailsimg">
+                        <h6 class="new" id="title-det"></h6>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="detail-info">
+                        <h3 id="detailTitle">Instructions</h3>
+                        <p id="detailDesc"></p>
+                    <h6 >Area: <span id="area1"></span></h6>
+                    <h6 >Category : <span id="area2"></span></h6>
+                    <div class="recipes">
+                        <h3>Recipes:</h3>
+                        <div class="recipes-btn">
+                        <button class="helwa"><span id="one" ></span> <span id="two"></span></button>
+                        <button class="helwa"><span id="three"></span> <span id="four"></span></button>
+                        <button class="helwa"><span id="five"></span> <span id="six"></span></button>
+                        <button class="helwa"><span id="seven"></span> <span id='eight'></span></button>
+                        <button class="helwa"><span id="nine"></span><span id="ten" ></span></button>
+                        <button class="helwa"><span id="one-1"></span> <span id="one-2"></span></button>
+                    </div>
+                    <div class="tags">
+                        <h3>Tags:</h3>
+                        <button><span id="one-17"></span></button>
+                        <button><a class="yout" id="one-18">YouTube</a></button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--show category filters-->
+    <section class="categorydetails d-none">
+        <div class="container">
+            <div class="row" id="categoryDetails">
+            </div>
+        </div>
+    </section>
+
+    <!--area-->
+    <section class="area d-none">
+        <div class="container">
+            <div class="row" id="displayArea">
+            </div>
+        </div>
+    </section>
+
+    <!--area details-->
+    <section class="areadetails d-none">
+        <div class="container">
+            <div class="row" id="displayareadetail">
+                </div>
+            </div>
+        
+    </section>
+
+    <!--Ingredients-->
+    <section class="ingredients  d-none">
+        <div class="container">
+            <div class="row" id="displayingredients">
+            </div>
+        </div>
+    </section>
+ <!--Ingredients details-->
+    <section class="ingredientsdetails d-none">
+        <div class="container">
+            <div class="row" id="displayingredientsdetails">
+                </div>
+            </div>
+        
+    </section>
+
+    <!--contact-->
+    <section class="contact d-none" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class=" col-md-6 ">
+                    <div class="form-group m-3">
+                        <input type="name" placeholder="Enter Your Name" id="name" class="form-control">
+                         <div class="direction p-1 my-1 d-none text-white" id="msgName" >Please Enter a Vaild Name</div>
+                    </div>
+                    <div class="form-group m-3">
+                        <input type="number" placeholder="Enter Your phone" id="phone" class="form-control">
+                        <div class="direction p-1 my-1 d-none text-white" id="msgPhone" >Please Enter a Vaild Number</div>
+                    </div>
+                    <div class="form-group m-3">
+                        <input type="password" placeholder="Enter Your password" id="pass" class="form-control">
+                        <div class="direction p-1 my-1 d-none text-white" id="msgpass" >Please Enter a Vaild Password</div>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="form-group m-3">
+                     <input type="email" placeholder="Enter Your Email" id="email" class="form-control">
+                    <div class="direction p-1 my-1 d-none text-white" id="msgEmail" >Please Enter a Vaild email</div>
+                    </div>
+                    <div class="form-group m-3">
+                        <input type="number" placeholder="Enter Your Age" id="age" class="form-control">
+                       <div class="direction p-1 my-1 d-none text-white" id="msgAge" >Please Enter a Vaild Age</div>
+                       </div>
+                       <div class="form-group m-3">
+                        <input type="password" placeholder="Enter Repassword" id="repass" class="form-control">
+                       <div class="direction p-1 my-1 d-none text-white" id="msgrepass" >Password not match</div>
+                       </div>
+                </div>
+                <div class="form-group m-3">
+                    <button class="btn btn-dark" id="submitBtn" disabled>Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>  
+    <script type="module" src="js/main.js"></script> 
+</body>
+</html>
